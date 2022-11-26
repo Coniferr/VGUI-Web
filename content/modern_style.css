@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+Body, HTML {
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/*--Base Window--*/
+
+.vg-window {
+    color: #FFF;
+    background-color: #343841;
+    backdrop-filter: blur(10px);
+    margin: 25px auto;
+    max-width: 500px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    display: block;
+    font-family: Cabin, sans-serif;
+    font-size: 14px;
+    user-select: none;
+}
+
+.vg-window::before {
+    width: 100%;
+    height: 2px;
+    content: " ";
+    display: block;
+    position: relative;
+    background: linear-gradient(120deg, #4DADFF 0%, #0975ff 90%);
+}
+
+/*--Base Titlebar--*/
+
+.vg-titlebar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 12px;
+}
+
+.vg-tabmenu {
+    margin-left: 12px;
+    display: flex;
+}
+
+.vg-tabmenu a {
+    color: #FFF;
+    display: block;
+    margin-right: 1px;
+    padding: 5px 10px;
+    min-width: 60px;
+    border: #FFF7 1px solid;
+    border-right-color: #0005;
+    border-bottom-color: #0005;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vg-tabmenu a#vg-selection {
+    font-weight: 700;
+}
+
+.vg-safearea {
+    border: #FFF7 1px solid;
+    border-right-color: #0005;
+    border-bottom-color: #0005;
+    margin: 0 12px;
+    padding: 8px;
+}
+
+.vg-title {
+    display: flex;
+}
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-color: #0007 !important;
+    border-color: #FFF7;
+}
+
+.vg-img {
+    border-left-color: #0007 !important;
+    border-top-color: #0007 !important;
+    border: #FFF7 1px solid;
+    width: 100%;
+}
+
+.vg-title img {
+    border-left-color: #0007 !important;
+    border-top-color: #0007 !important;
+    border: #FFF7 1px solid;
+    margin-right: 8px;
+    width: 90px;
+    height: 90px;
+}
+
+.vg-title h2, .vg-title h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.vg-footer {
+    padding: 12px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.vg-footer a {
+    color: rgba(255, 255, 255, 0.85);
+    display: block;
+    margin-right: 4px;
+    padding: 6px 10px;
+    min-width: 70px;
+    text-align: center;
+    background-color: #4DADFF;
+    border-width: 0px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.vg-footer a:hover {
+    color: #FFF;
+    background: linear-gradient(120deg, #4DADFF 40%, #0975ff 90%);
+}
+
+/*--Base Taskbar--*/
+
+.vg-task {
+    background-color: #AAA8;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    border-top: #FFF7 1px solid;
+    border-bottom: #0005 1px solid;
+    bottom: 0;
+}

@@ -1,0 +1,124 @@
+Body, HTML {
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/*--Base Window--*/
+
+.vg-window {
+    color: #FFF;
+    background-color: #AAA8;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    margin: 25px auto;
+    max-width: 500px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: block;
+    text-shadow: 0 1px 1px #0006;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    user-select: none;
+}
+
+/*--Base Titlebar--*/
+
+.vg-titlebar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.vg-tabmenu {
+    display: flex;
+}
+
+.vg-tabmenu a {
+    color: #FFF;
+    display: block;
+    margin-right: 1px;
+    padding: 5px;
+    padding-right: 15px;
+    border: #FFF7 1px solid;
+    border-right-color: #0005;
+    border-bottom-color: #0005;
+    text-decoration: none;
+}
+
+.vg-tabmenu a#vg-selection {
+    font-weight: 700;
+}
+
+.vg-safearea {
+    border: #FFF7 1px solid;
+    border-right-color: #0005;
+    border-bottom-color: #0005;
+    padding: 8px;
+}
+
+.vg-title {
+    display: flex;
+}
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-color: #0007 !important;
+    border-color: #FFF7;
+}
+
+.vg-img {
+    border-left-color: #0007 !important;
+    border-top-color: #0007 !important;
+    border: #FFF7 1px solid;
+    width: 100%;
+}
+
+.vg-title img {
+    border-left-color: #0007 !important;
+    border-top-color: #0007 !important;
+    border: #FFF7 1px solid;
+    margin-right: 8px;
+    width: 90px;
+    height: 90px;
+}
+
+.vg-title h2, .vg-title h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.vg-footer {
+    margin-top: 8px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.vg-footer a {
+    color: #FFF;
+    display: block;
+    margin-right: 4px;
+    padding: 5px;
+    padding-right: 15px;
+    border: #FFF7 1px solid;
+    border-right-color: #0005;
+    border-bottom-color: #0005;
+    text-decoration: none;
+}
+
+/*--Base Taskbar--*/
+
+.vg-task {
+    background-color: #AAA8;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    border-top: #FFF7 1px solid;
+    border-bottom: #0005 1px solid;
+    bottom: 0;
+}
